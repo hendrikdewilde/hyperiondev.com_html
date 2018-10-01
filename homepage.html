@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="css/online_store.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/online_store_jquery.js"></script>
+    <script type="text/javascript" src="js/online_store.js"></script>
+    <script type="text/javascript">
+        var mySesionLogin = CheckSession();
+        function invisibleShopping()
+        {
+            if (mySesionLogin === false) {
+                //alert("false");
+                document.getElementById("myMenuUL").children[4].style.display="none";
+                document.getElementById("myMenuUL").children[5].style.display="none";
+                document.getElementById("myMenuUL").children[6].style.display="none";
+            } else {
+                document.getElementById("myMenuUL").children[3].style.display="none";
+            }
+        }
+    </script>
+</head>
+<body onload="invisibleShopping();">
+<div id="myMain">
+    <div class="mySheet">
+        <div class="myBody">
+            <div class="myHeader">
+                <div class="myHeader-jpeg"></div>
+                <header>
+                    <h1 id="mainHeading">Home</h1>
+                </header>
+            </div>
+            <div class="myNav">
+                <ul class="myMenu" id="myMenuUL">
+                    <li>
+                        <a href="homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="meet_the_team.html">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="logout.html">Logout</a>
+                    </li>
+                    <a href="shopping_cart.html"><img class="cartIcon" src="images/shopping-cart2-512.png"></a>
+                </ul>
+            </div>
+            <div class="myContentLayout">
+                <div class="myContent">
+                    <h2>Welcome to our online store</h2>
+
+                    <p>We specialize in XBOX Products.
+                    </p>
+
+                    <p id="myPItem1" class="myPItem11">No one has more games and other entertainment content for your Xbox, period.
+                        Browse the our Store to find all the latest hot new releases, blockbuster exclusives,
+                        season passes, add-on content, Indie games and more—all at great prices. Whether it's
+                        a casual puzzle game or the latest exclusive shooter that you're looking for.
+                    </p>
+
+                    <p id="myPItem2" class="myPItem11">Xbox One consoles and bundles
+                        See all the limited editions, bundles and consoles Xbox has to offer.
+                    </p>
+
+                    <p id="myPItem3" class="myPItem11">Order games, consoles and accessories online and have them delivered to your door.
+                        Or opt to collect in any of our stores in SA and Namibia. We offer safe online shopping
+                        with free deliveries to major areas (T's & C's apply). Pre-order your games to save money
+                        and secure additional incentives where available. Don't forget to trade in selected
+                        old games in-store for a credit. We hope you enjoy our new website and would love to
+                        hear from you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="myFooter-background"></div>
+                <div class="myFooter-text">
+                    <p>Created by Hendrik de Wilde</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

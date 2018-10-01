@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XBOX One</title>
+    <link href="../css/online_store.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/online_store_jquery.js"></script>
+    <script type="text/javascript" src="../js/online_store.js"></script>
+    <script type="text/javascript">
+        if (CheckSession() === false) {
+            alert('Please Login.');
+            window.location="../login.html";
+        }
+        if (sessionStorage.getItem("AddChartReturn") === "true") {
+            window.location="../catalogue.html";
+        }
+    </script>
+</head>
+<body>
+<div id="myMain">
+    <div class="mySheet">
+        <div class="myBody">
+            <div class="myHeader">
+                <div class="myHeader-jpeg"></div>
+                <header>
+                    <h1 id="mainHeading">TOM CLANCYS THE DIVISION</h1>
+                </header>
+            </div>
+            <div class="myNav">
+                <ul class="myMenu">
+                    <li>
+                        <a href="../homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../meet_the_team.html">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="../catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="../logout.html">Logout</a>
+                    </li>
+                    <a href="../shopping_cart.html"><img class="cartIcon" src="../images/shopping-cart2-512.png"></a>
+                </ul>
+            </div>
+            <div class="myContentLayout">
+                <div class="myContent">
+                    <h2 class="myItemsH2">TOM CLANCYS THE DIVISION - R495.00</h2>
+                    <img class="myItemImageSize" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR2199BI16214_N016118207007647_XB1_TOM_CLANCYS_THE_DIVISION_SZ1.jpg">
+                    <p class="myItemsPSize myItemsPColor">A devastating pandemic sweeps through New York City causing basic services to rapidly fail
+                        one by one. Society collapses into total chaos in only a matter of days as essential needs
+                        such as food and water become scarce.
+
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">The President invokes Presidential Directive 51, and The Division, a classified unit of
+                        self-supported tactical agents, is activated during this emergency scenario. Leading
+                        seemingly ordinary lives among us, Division agents are trained to operate independently
+                        in order to save society. When society falls, your mission begins.
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">Powered by our new game engine SnowdropTM, tailor-made for next-gen consoles,
+                        Tom Clancy's The Division achieves a whole new level of gameplay quality. Snowdrop takes
+                        full advantage of the new consoles with dynamic global illumination, stunning procedural
+                        destruction and an insane amount of detail and visual effects.
+                    </p>
+                    <a href="https://www.btgames.co.za/tom-clancys-the-division/" class="myButton myButtonMoreInfo" target="_blank">More Info</a>
+                    <a href="../catalogue.html#xbox_one_division" class="myButton">Back</a>
+                    <a href="" class="myButton myButtonAddItemSize" onclick="AddItemToCart('TOM CLANCYS THE DIVISION', 495.00);">Add <img class="cartIconSmall" src="../images/shopping-cart2-512.png"></a>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="myFooter-background"></div>
+                <div class="myFooter-text">
+                    <p>Created by Hendrik de Wilde</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

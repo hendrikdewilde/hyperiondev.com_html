@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XBOX One</title>
+    <link href="../css/online_store.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/online_store_jquery.js"></script>
+    <script type="text/javascript" src="../js/online_store.js"></script>
+    <script type="text/javascript">
+        if (CheckSession() === false) {
+            alert('Please Login.');
+            window.location="../login.html";
+        }
+        if (sessionStorage.getItem("AddChartReturn") === "true") {
+            window.location="../catalogue.html";
+        }
+    </script>
+</head>
+<body>
+<div id="myMain">
+    <div class="mySheet">
+        <div class="myBody">
+            <div class="myHeader">
+                <div class="myHeader-jpeg"></div>
+                <header>
+                    <h1 id="mainHeading">MY HERO ONES JUSTICE</h1>
+                </header>
+            </div>
+            <div class="myNav">
+                <ul class="myMenu">
+                    <li>
+                        <a href="../homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../meet_the_team.html">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="../catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="../logout.html">Logout</a>
+                    </li>
+                    <a href="../shopping_cart.html"><img class="cartIcon" src="../images/shopping-cart2-512.png"></a>
+                </ul>
+            </div>
+            <div class="myContentLayout">
+                <div class="myContent">
+                    <h2 class="myItemsH2">MY HERO ONES JUSTICE - R395.00</h2>
+                    <img class="myItemImageSize" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR35448BI20529_N016112401012276_XB1_MY_HERO_ONES_JUSTICE_SZ1.jpg">
+                    <p class="myItemsPSize myItemsPColor">Whether you want to see the destruction of humanity or believe heroes should defend those in
+                        need, fight to prove your justice in MY HERO ONE’S JUSTICE.
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">The popular Weekly Shonen Jump manga series comes to life, as players experience the
+                        abilities of fan favorite characters such as Izuku “Deku” Midoriya, Katsuki “Katchan” Bakugo,
+                        All Might, and many more in this arena brawler, where you’ll get to choose between hero and
+                        villain in your path to justice.
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">Utilize Quirks and call upon your sidekicks to activate powerful attacks where your
+                        environments are at your disposal in total field destruction.
+                    </p>
+                    <a href="https://www.btgames.co.za/xb1-my-hero-ones-justice/"  class="myButton myButtonMoreInfo" target="_blank">More Info</a>
+                    <a href="../catalogue.html#MY_HERO_ONES_JUSTICE" class="myButton">Back</a>
+                    <a href="" class="myButton myButtonAddItemSize" onclick="AddItemToCart('MY HERO ONES JUSTICE', 395.00);">Add <img class="cartIconSmall" src="../images/shopping-cart2-512.png"></a>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="myFooter-background"></div>
+                <div class="myFooter-text">
+                    <p>Created by Hendrik de Wilde</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

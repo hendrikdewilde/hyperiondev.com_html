@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="css/online_store.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/online_store_jquery.js"></script>
+    <script type="text/javascript" src="js/online_store.js"></script>
+    <script type="text/javascript">
+        //alert(CheckSession());
+        if (CheckSession() === false) {
+            alert('Please Login.');
+            window.location="login.html";
+        }
+    </script>
+</head>
+<body onload="DisplayCartlnfo()">
+<div id="myMain">
+    <div class="mySheet">
+        <div class="myBody">
+            <div class="myHeader">
+                <div class="myHeader-jpeg"></div>
+                <header>
+                    <h1 id="mainHeading">Shopping Cart</h1>
+                </header>
+            </div>
+            <div class="myNav">
+                <ul class="myMenu" id="myMenuUL">
+                    <li>
+                        <a href="homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="meet_the_team.html">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="logout.html">Logout</a>
+                    </li>
+                    <a href="shopping_cart.html"><img class="cartIcon" src="images/shopping-cart2-512.png"></a>
+                </ul>
+            </div>
+            <div class="myContentLayout">
+                <div class="myContent">
+                    <div class="wrap" style="width: 600px;">
+                        <ul class="myAccordion">
+                            <li>
+                                <h3>Your Shopping Cart</h3>
+                                <div class="content">
+                                    <p>Here are your Cart Items.</p>
+                                    <div>
+                                        <table id="cart_list">
+
+                                        </table>
+                                    </div>
+                                    <br>
+                                    <div class='myDivWithBorder'>
+                                        <table id="cart_list2">
+
+                                        </table>
+                                    </div>
+                                    <br>
+                                    <a href="checkout_details.html" class="myButton">Check-out</a>
+                                    <br>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>Calculator</h3>
+                                <div class="content">
+                                    <div id="theCalculatorDiv">
+                                        <table id="theCalculatorDisplayTable">
+                                            <tr>
+                                                <td><input id="theCalculatorDisplay" size="11" disabled></input></td>
+                                            </tr>
+                                        </table>
+                                        <table id="theCalculatorTable">
+                                            <tr>
+                                                <td><button value="7" class="theCalculatorButton" id="theCalculatorButton7" onclick="document.getElementById('theCalculatorDisplay').value += '7'">7</button></td>
+                                                <td><button value="8" class="theCalculatorButton" id="theCalculatorButton8" onclick="document.getElementById('theCalculatorDisplay').value += '8'">8</button></td>
+                                                <td><button value="9" class="theCalculatorButton" id="theCalculatorButton9" onclick="document.getElementById('theCalculatorDisplay').value += '9'">9</button></td>
+                                                <td><button value="/" class="theCalculatorButton" id="theCalculatorButtonD" onclick="document.getElementById('theCalculatorDisplay').value += '/'">/</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button value="4" class="theCalculatorButton" id="theCalculatorButton4" onclick="document.getElementById('theCalculatorDisplay').value += '4'">4</button></td>
+                                                <td><button value="5" class="theCalculatorButton" id="theCalculatorButton5" onclick="document.getElementById('theCalculatorDisplay').value += '5'">5</button></td>
+                                                <td><button value="6" class="theCalculatorButton" id="theCalculatorButton6" onclick="document.getElementById('theCalculatorDisplay').value += '6'">6</button></td>
+                                                <td><button value="*" class="theCalculatorButton" id="theCalculatorButtonMu" onclick="document.getElementById('theCalculatorDisplay').value += '*'">X</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button value="1" class="theCalculatorButton" id="theCalculatorButton1" onclick="document.getElementById('theCalculatorDisplay').value += '1'">1</button></td>
+                                                <td><button value="2" class="theCalculatorButton" id="theCalculatorButton2" onclick="document.getElementById('theCalculatorDisplay').value += '2'">2</button></td>
+                                                <td><button value="3" class="theCalculatorButton" id="theCalculatorButton3" onclick="document.getElementById('theCalculatorDisplay').value += '3'">3</button></td>
+                                                <td><button value="-" class="theCalculatorButton" id="theCalculatorButtonMi" onclick="document.getElementById('theCalculatorDisplay').value += '-'">-</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button value="C" class="theCalculatorButton" id="theCalculatorButtonC" onclick="document.getElementById('theCalculatorDisplay').value = ''">C</button></td>
+                                                <td><button value="0" class="theCalculatorButton" id="theCalculatorButton0" onclick="document.getElementById('theCalculatorDisplay').value += '0'">0</button></td>
+                                                <td><button value="=" class="theCalculatorButton" id="theCalculatorButtonE" onclick="document.getElementById('theCalculatorDisplay').value = eval(document.getElementById('theCalculatorDisplay').value)">=</button></td>
+                                                <td><button value="+" class="theCalculatorButton" id="theCalculatorButtonP" onclick="document.getElementById('theCalculatorDisplay').value += '+'">+</button></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="myFooter-background"></div>
+                <div class="myFooter-text">
+                    <p>Created by Hendrik de Wilde</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

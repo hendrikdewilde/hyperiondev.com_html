@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XBOX One</title>
+    <link href="../css/online_store.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/online_store_jquery.js"></script>
+    <script type="text/javascript" src="../js/online_store.js"></script>
+    <script type="text/javascript">
+        if (CheckSession() === false) {
+            alert('Please Login.');
+            window.location="../login.html";
+        }
+        if (sessionStorage.getItem("AddChartReturn") === "true") {
+            window.location="../catalogue.html";
+        }
+    </script>
+</head>
+<body>
+<div id="myMain">
+    <div class="mySheet">
+        <div class="myBody">
+            <div class="myHeader">
+                <div class="myHeader-jpeg"></div>
+                <header>
+                    <h1 id="mainHeading">DARKSIDERS 2</h1>
+                </header>
+            </div>
+            <div class="myNav">
+                <ul class="myMenu">
+                    <li>
+                        <a href="../homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../meet_the_team.html">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="../catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="../logout.html">Logout</a>
+                    </li>
+                    <a href="../shopping_cart.html"><img class="cartIcon" src="../images/shopping-cart2-512.png"></a>
+                </ul>
+            </div>
+            <div class="myContentLayout">
+                <div class="myContent">
+                    <h2 class="myItemsH2">DARKSIDERS 2 - R795.00</h2>
+                    <img class="myItemImageSize" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR7751BI16088_N016121701009587_XB1_DARKSIDERS_2_DEATHINITIVE_EDITION_SZ1.jpg">
+                    <p class="myItemsPSize myItemsPColor">Awakened by the End of Days, Death, the most feared of the legendary Four Horsemen,
+                        embarks upon a quest to restore mankind, and redeem his brother's name. Along the way,
+                        the Horseman discovers that there are far worse things than an earthly Apocalypse, and
+                        that an ancient grudge may threaten all of Creation.
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">Darksiders II follows the exploits of Death, one of the four horsemen of the Apocalypse, in
+                        an action-packed tale that runs parallel to the events in the original Darksiders game. This
+                        epic journey propels Death across an expansive gameworld as he tries to redeem his brother,
+                        War, the horseman blamed for prematurely starting the Apocalypse in Darksiders.
+                        Like the original Darksiders game before it, the second iteration of the series is primarily
+                        a hack ‘n slash adventure.
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">The game takes place across netherworld environments, including "The White city," an outpost
+                        where angels live, and "The Eternal Throne," a floating fortress where the Lords of the Dead
+                        stand guard over souls that need to be cleansed. Although Death is the most feared of the
+                        Four Horsemen, his physical abilities are very different than his brother, War. Death is far
+                        more nimble, and relies on a combination of melee and ranged attacks. In combat Death's
+                        primary weapon is his huge iconic scythe, with a wide range of other weapons and usable
+                        items that must be gathered as the game progresses.
+                    </p>
+                    <a href="https://www.btgames.co.za/xb1-darksiders-2-deathinitive-edition/" class="myButton myButtonMoreInfo" target="_blank">More Info</a>
+                    <a href="../catalogue.html#xbox_one_DARKSIDERS" class="myButton">Back</a>
+                    <a href="" class="myButton myButtonAddItemSize" onclick="AddItemToCart('DARKSIDERS 2', 795.00);">Add <img class="cartIconSmall" src="../images/shopping-cart2-512.png"></a>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="myFooter-background"></div>
+                <div class="myFooter-text">
+                    <p>Created by Hendrik de Wilde</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

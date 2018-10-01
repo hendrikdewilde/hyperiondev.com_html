@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check-out Details</title>
+    <link href="css/online_store.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/online_store_jquery.js"></script>
+    <script type="text/javascript" src="js/online_store.js"></script>
+    <script type="text/javascript">
+        //alert(CheckSession());
+        if (CheckSession() === false) {
+            alert('Please Login.');
+            window.location="login.html";
+        }
+    </script>
+</head>
+<body>
+<div id="myMain">
+    <div class="mySheet">
+        <div class="myBody">
+            <div class="myHeader">
+                <div class="myHeader-jpeg"></div>
+                <header>
+                    <h1 id="mainHeading">Check-out Details</h1>
+                </header>
+            </div>
+            <div class="myNav">
+                <ul class="myMenu">
+                    <li>
+                        <a href="homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="meet_the_team.html">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="logout.html">Logout</a>
+                    </li>
+                    <a href="shopping_cart.html"><img class="cartIcon" src="images/shopping-cart2-512.png"></a>
+                </ul>
+            </div>
+            <div class="myContentLayout">
+                <div class="myContent">
+                    <h2>Enter your shipping detail</h2>
+                    <div class='myDivWithBorder'>
+                        <form action="checkout_order.html">
+                            <br><b>Personal Detail:</b>
+                            <table class="detailTable">
+                                <tr>
+                                    <td>Name & Surname:</td>
+                                    <td><input type="text" name="name" id="name" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile:</td>
+                                    <td><input type="text" name="mobile" id="mobile" required></td>
+                                </tr>
+                            </table>
+                            <br><b>Shipping:</b>
+                            <table class="detailTable">
+                                <tr>
+                                    <td>Delivery:</td>
+                                    <td><input type="radio" name="delivery" value="Pickup" checked>Pickup<br>
+                                        <input type="radio" name="delivery" value="Courier">Courier<br></td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery Address:</td>
+                                    <td><textarea rows="6" cols="70" name="address" id="address"></textarea></td>
+                                </tr>
+                            </table>
+                            <br><b>Discount Coupon:</b>
+                            <table class="detailTable">
+                                <tr>
+                                    <td>Coupon:</td>
+                                    <td><input type="text" name="coupon" id="coupon"></td>
+                                </tr>
+                                <tr>
+                                    <td>* Save100</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>* Save250</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>* Save500</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <input type="submit" value="Save" class="myButton" onclick="checkout_detail()">
+                        </form>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="myFooter-background"></div>
+                <div class="myFooter-text">
+                    <p>Created by Hendrik de Wilde</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

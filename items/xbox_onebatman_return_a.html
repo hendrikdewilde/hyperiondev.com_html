@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Batman Return To Arkham</title>
+    <link href="../css/online_store.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/online_store_jquery.js"></script>
+    <script type="text/javascript" src="../js/online_store.js"></script>
+    <script type="text/javascript">
+        if (CheckSession() === false) {
+            alert('Please Login.');
+            window.location="../login.html";
+        }
+        if (sessionStorage.getItem("AddChartReturn") === "true") {
+            window.location="../catalogue.html";
+        }
+    </script>
+</head>
+<body>
+<div id="myMain">
+    <div class="mySheet">
+        <div class="myBody">
+            <div class="myHeader">
+                <div class="myHeader-jpeg"></div>
+                <header>
+                    <h1 id="mainHeading">Batman Return To Arkham</h1>
+                </header>
+            </div>
+            <div class="myNav">
+                <ul class="myMenu">
+                    <li>
+                        <a href="../homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../meet_the_team.html">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="../catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="../logout.html">Logout</a>
+                    </li>
+                    <a href="../shopping_cart.html"><img class="cartIcon" src="../images/shopping-cart2-512.png"></a>
+                </ul>
+            </div>
+            <div class="myContentLayout">
+                <div class="myContent">
+                    <h2 class="myItemsH2">Batman Return To Arkham - R595.00</h2>
+                    <img class="myItemImageSize" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR2745BI16082_N016119001010303_XB1_BATMAN_RETURN_TO_ARKHAM_SZ1.jpg">
+                    <p class="myItemsPSize myItemsPColor">Return to Arkham and experience two of the most critically acclaimed titles of the last
+                        generation - Batman: Arkham Asylum and Batman: Arkham City, with fully remastered and updated
+                        visuals. Batman: Return to Arkham includes the comprehensive versions of both games and
+                        includes all previously released additional content.
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">Batman: Arkham Asylum is where it all began. Originally developed by Rocksteady Studios and
+                        released in 2009, the game pushed the envelope for action, adventure and super hero games
+                        and exposed players to a unique, dark and atmospheric adventure taking them to the depths
+                        of Arkham Asylum. Featuring an original story, gamers can move in the shadows, instill fear
+                        amongst their enemies and confront The Joker and Gotham City's most notorious villains,
+                        including Harley Quinn, Bane, Killer Croc, Poison Ivy and Scarecrow, who have taken over
+                        the asylum.
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">Batman: Arkham City is Rocksteady Studios' 2011 follow-up to Batman: Arkham Asylum. The game
+                        builds upon the intense, atmospheric foundation of Batman: Arkham Asylum, sending players
+                        soaring through the expansive Arkham City - the maximum security 'home' for all of
+                        Gotham City's thugs, gangsters and insane criminal masterminds. Featuring an incredible
+                        Rogues Gallery of Gotham City's most dangerous criminals including Catwoman, The Joker,
+                        The Riddler, Two-Face, Harley Quinn, The Penguin, Mr. Freeze and many others, the game
+                        allows players to experience what it feels like to be The Dark Knight and deliver justice
+                        to those confined within Arkham City.
+                    </p>
+                    <a href="https://www.btgames.co.za/batman-return-to-arkham/" class="myButton myButtonMoreInfo" target="_blank">More Info</a>
+                    <a href="../catalogue.html#xbox_onebatman_return_a" class="myButton">Back</a>
+                    <a href="" class="myButton myButtonAddItemSize" onclick="AddItemToCart('Batman Return To Arkham', 595.00);">Add <img class="cartIconSmall" src="../images/shopping-cart2-512.png"></a>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="myFooter-background"></div>
+                <div class="myFooter-text">
+                    <p>Created by Hendrik de Wilde</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

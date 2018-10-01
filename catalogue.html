@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogue</title>
+    <link href="css/online_store.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/online_store_jquery.js"></script>
+    <script type="text/javascript" src="js/online_store.js"></script>
+    <script type="text/javascript">
+        //alert(CheckSession());
+        if (CheckSession() === false) {
+            alert('Please Login.');
+            window.location="login.html";
+        }
+        AddChartReturnValueClear();
+    </script>
+</head>
+<body>
+<div id="myMain">
+    <div class="mySheet">
+        <div class="myBody">
+            <div class="myHeader">
+                <div class="myHeader-jpeg"></div>
+                <header>
+                    <h1 id="mainHeading">Catalogue</h1>
+                </header>
+            </div>
+            <div class="myNav">
+                <ul class="myMenu">
+                    <li>
+                        <a href="homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="meet_the_team.html">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="logout.html">Logout</a>
+                    </li>
+                    <a href="shopping_cart.html"><img class="cartIcon" src="images/shopping-cart2-512.png"></a>
+                </ul>
+            </div>
+            <div class="myContentLayout">
+                <div class="myContent myContentBackground">
+                    <input type="text" id="mySearchInput" onkeyup="mySearchFunction()" placeholder="Search for names..">
+                    <ul class="items" id="myItemsUL">
+                        <li>
+                            <a href="items/xbox_one.html" id="xbox_one">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR28236BI16909_N026111599011534_XB1_S_500GB_FIFA_18_SZ1.jpg">
+                                <h4>XBOX ONE S 500GB + FIFA 18</h4>
+                                <div class="myAmount"><p>R3990.00</p></div>
+                                <button onclick="AddItemToCart('XBOX ONE S 500GB + FIFA 18', 3990.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="items/xbox_one%20_remote.html" id="xbox_one_remote">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR3751BI17634_N040117899010041_THRUSTMASTER_GAMEPAD_DUAL_ANALOGUE_SZ1.jpg">
+                                <h4>XBOX ONE REMOTE</h4>
+                                <div class="myAmount"><p>R795.00</p></div>
+                                <button onclick="AddItemToCart('XBOX ONE REMOTE', 795.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="items/xbox_one_far_cry_5.html" id="xbox_one_far_cry_5">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR26667BI20241_N016118210011272_XB1_FAR_CRY_5_SZ1.jpg">
+                                <h4>FAR CRY 5 STANDARD</h4>
+                                <div class="myAmount"><p>R995.00</p></div>
+                                <button onclick="AddItemToCart('FAR CRY 5', 995.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="items/xbox_one_destiny_2.html" id="xbox_one_destiny_2">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR19859BI15555_N016100510011179_XB1_DESTINY_2_SZ1.jpg">
+                                <h4>DESTINY 2 STANDARD</h4>
+                                <div class="myAmount"><p>R695.00</p></div>
+                                <button onclick="AddItemToCart('DESTINY 2', 695.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="items/xbox_onebatman_return_a.html" id="xbox_onebatman_return_a">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR2745BI16082_N016119001010303_XB1_BATMAN_RETURN_TO_ARKHAM_SZ1.jpg">
+                                <h4>BATMAN RETURN TO ARKHAM</h4>
+                                <div class="myAmount"><p>R595.00</p></div>
+                                <button onclick="AddItemToCart('BATMAN RETURN TO ARKHAM', 595.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="items/xbox_one_DARKSIDERS%202%20.html" id="xbox_one_DARKSIDERS">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR7751BI16088_N016121701009587_XB1_DARKSIDERS_2_DEATHINITIVE_EDITION_SZ1.jpg">
+                                <h4>DARKSIDERS 2 STANDARD</h4>
+                                <div class="myAmount"><p>R795.00</p></div>
+                                <button onclick="AddItemToCart('DARKSIDERS 2', 795.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="items/xbox_one_battlefield_1.html" id="xbox_one_battlefield_1">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR3724BI16084_N016105910010278_XB1_BATTLEFIELD_1_SZ1.jpg">
+                                <h4>BATTLEFIELD 1 STANDARD</h4>
+                                <div class="myAmount"><p>R495.00</p></div>
+                                <button onclick="AddItemToCart('BATTLEFIELD 1', 495.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="items/xbox_one_division.html" id="xbox_one_division">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR2199BI16214_N016118207007647_XB1_TOM_CLANCYS_THE_DIVISION_SZ1.jpg">
+                                <h4>TOM CLANCYS THE DIVISION</h4>
+                                <div class="myAmount"><p>R495.00</p></div>
+                                <button onclick="AddItemToCart('TOM CLANCYS THE DIVISION', 495.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="items/MY%20HERO%20ONES%20JUSTICE.html" id="MY_HERO_ONES_JUSTICE">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR35448BI20529_N016112401012276_XB1_MY_HERO_ONES_JUSTICE_SZ1.jpg">
+                                <h4>MY HERO ONES JUSTICE</h4>
+                                <div class="myAmount"><p>R395.00</p></div>
+                                <button onclick="AddItemToCart('MY HERO ONES JUSTICE', 395.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="items/xbox_one_gta_5.html" id="xbox_one_gta_5">
+                                <img class="itemPics" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR2138BI10283_N016117001005945_XB1_GRAND_THEFT_AUTO_V_SZ1.jpg">
+                                <h4>GRAND THEFT AUTO V</h4>
+                                <div class="myAmount"><p>R795.00</p></div>
+                                <button onclick="AddItemToCart('GRAND THEFT AUTO V', 795.00);">Add <img class="cartIcon" src="images/shopping-cart2-512.png"></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="myFooter-background"></div>
+                    <div class="myFooter-text">
+                        <p>Created by Hendrik de Wilde</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="myAdvert">Specials!!</div>
+</body>
+</html>

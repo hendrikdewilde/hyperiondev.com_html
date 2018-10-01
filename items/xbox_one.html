@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XBOX One</title>
+    <link href="../css/online_store.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/online_store_jquery.js"></script>
+    <script type="text/javascript" src="../js/online_store.js"></script>
+    <script type="text/javascript">
+        if (CheckSession() === false) {
+            alert('Please Login.');
+            window.location="../login.html";
+        }
+        if (sessionStorage.getItem("AddChartReturn") === "true") {
+            window.location="../catalogue.html";
+        }
+    </script>
+</head>
+<body>
+<div id="myMain">
+    <div class="mySheet">
+        <div class="myBody">
+            <div class="myHeader">
+                <div class="myHeader-jpeg"></div>
+                <header>
+                    <h1 id="mainHeading">XB1 S 500GB + FIFA 18</h1>
+                </header>
+            </div>
+            <div class="myNav">
+                <ul class="myMenu">
+                    <li>
+                        <a href="../homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../meet_the_team.html">Meet the Team</a>
+                    </li>
+                    <li>
+                        <a href="../catalogue.html">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="../logout.html">Logout</a>
+                    </li>
+                    <a href="../shopping_cart.html"><img class="cartIcon" src="../images/shopping-cart2-512.png"></a>
+                </ul>
+            </div>
+            <div class="myContentLayout">
+                <div class="myContent">
+                    <h2 class="myItemsH2">XB1 S 500GB + FIFA 18 - R3990.00</h2>
+                    <img class="myItemImageSize" src="https://www.btgames.co.za/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/P/R/PR28236BI16909_N026111599011534_XB1_S_500GB_FIFA_18_SZ1.jpg">
+                    <p class="myItemsPSize myItemsPColor">The Xbox One S also comes with an all-new controller, again in the 'robot white' shade. The
+                        controller will feature textured grips and includes Bluetooth in addition to proprietary
+                        wireless capability, this resulting in a dramatically improved wireless range. The new
+                        Bluetooth controller will also be compatible with PC and is included with the console, it's
+                        also available to buy separately. Other changes include a front, easy-access, USB port.
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">Powered by Frostbite, EA SPORTS FIFA 18 blurs the line between the virtual and real worlds,
+                        bringing to life the players, teams, and atmospheres that immerse you in the emotion of The
+                        World’s Game. The biggest step in gameplay innovation in franchise history, FIFA 18
+                        introduces Real Player Motion Technology, an all-new animation system which unlocks a new
+                        level of responsiveness, and player personality – now Cristiano Ronaldo and other top players
+                        feel and move exactly like they do on the real pitch.
+                    </p>
+                    <p class="myItemsPSize myItemsPColor">Tour around the footballing world and visit incredible places such as Brazil, Los Angeles
+                        and more. Each destination features new and improved graphics including high definition
+                        dynamic crowds that will chant as you work into your attack and can be interacted with when
+                        you score, authentic sun light and positions, debris on the pitch, adaptive commentary,
+                        atmosphere grading and more. Sit down with other managers and discuss the transfer window
+                        with interactive negotiations. The newest mapping technology provides each player with their
+                        own unique identity, which combined with the updated dribbling tech adds more creativity and
+                        excitement into the 1v1 battles. Locomotion and finishing animations have opened the option to
+                        unlock more fluid heading and striking combinations, allowing for more dramatic goals and
+                        saves than we’re used to. These new and exciting graphics provide the players with the
+                        skillset required to go from a gentle tap of the ball, into a full sprint like Ronaldo,
+                        giving you the most realistic gameplay that we have ever seen from FIFA.
+                    </p>
+                    <a href="https://www.btgames.co.za/xb1-s-500gb-fifa-18/" class="myButton myButtonMoreInfo" target="_blank">More Info</a>
+                    <a href="../catalogue.html#xbox_one" class="myButton">Back</a>
+                    <a href="" class="myButton myButtonAddItemSize" onclick="AddItemToCart('XBOX ONE S 500GB + FIFA 18', 3990.00);">Add <img class="cartIconSmall" src="../images/shopping-cart2-512.png"></a>
+                </div>
+            </div>
+
+            <div class="myFooter">
+                <div class="myFooter-background"></div>
+                <div class="myFooter-text">
+                    <p>Created by Hendrik de Wilde</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
